@@ -1,0 +1,19 @@
+#t1
+{
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+width: 100%;
+border: 1px solid black;
+text-align: center;
+}
+#t1 td, #t1 th
+{
+border: 1px solid black;
+text-align: center;
+padding: 15px;
+}
+#t1 tr:hover
+{
+background-color: cyan;
+}

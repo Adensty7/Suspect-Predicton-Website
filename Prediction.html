@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Result</h2>
+
+<p id="demo"></p>
+
+<script>
+var la,pa; //Logical Average, Physical Average
+var i; 
+var avg; //Total Average
+var sum = 0;
+var a = [7,3,5]; //Logical Evidences
+var b = [9,5]; //Physical Evidences
+for(i=0;i<3;i++)
+{
+sum+=a[i];//Summing all the logical evidences
+}
+la=sum/3;//Calculation of Logical Average
+sum=0;
+for(i=0;i<2;i++)
+{
+sum+=b[i];//Summing all the physical evidences
+}
+pa=sum/2;//Calculation of Physical Average
+avg = (la + pa) / 2;//Calculation of Total Average used for prediction
+
+
+document.getElementById("demo").innerHTML =
+"Logical Evidences: " + a + "<br>Physical Evidences: " + b + 
+"<br>Physical Average: " + la + "<br>Logical Average: " + pa +
+"<br>Final Average: " + avg;
+
+</script>
+
+</body>
+</html>
